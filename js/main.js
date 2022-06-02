@@ -138,7 +138,7 @@ var app = new Vue({
                 items: this.cart_items
             }
             let order_string = (JSON.stringify(order))
-            fetch('https://coursework-two-king.herokuapp.com/collection/activities', {
+            fetch('https://coursework-two-king.herokuapp.com/collection/orders', {
                 method: "POST",
                 body: order_string,
                 headers: {
